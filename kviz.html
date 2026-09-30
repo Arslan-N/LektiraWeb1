@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kviz — provjeri znanje o djelu | Prosanjane jeseni</title>
+  <meta name="description" content="Kviz od 12 pitanja o djelu „Prosanjane jeseni“ i o odgovorima 3. grupe: jedno pitanje po zaslonu, provjera tačnosti i rezultat na kraju.">
+  <meta name="theme-color" content="#120c09">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="kviz">
+  <div class="progress" data-progress aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Preskoči na sadržaj</a>
+
+  <header class="site-header" data-header>
+    <div class="container container--wide header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C9.6 4.6 6.4 4.1 3.5 4.4v13.2c2.9-.3 6.1.2 8.5 2.1"/><path d="M12 6.5c2.4-1.9 5.6-2.4 8.5-2.1v13.2c-2.9-.3-6.1.2-8.5 2.1"/><path d="M12 6.5v13.2"/></svg></span>
+        <span class="brand__text"><span class="brand__title">Prosanjane jeseni</span><span class="brand__sub">Zija Dizdarević · Rad 3. grupe</span></span>
+      </a>
+      <nav class="nav" id="glavna-navigacija" data-nav aria-label="Glavna navigacija">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="index.html">Početna</a></li>
+          <li class="nav__item" data-sub>
+            <button class="nav__sub-toggle" type="button" aria-expanded="false" aria-controls="podmeni-pitanja">Pitanja <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+            <ul class="nav__sub" id="podmeni-pitanja">
+              <li><a class="nav__sub-link" href="pitanje1.html"><span>01</span> Dizdarevićeva slika ljudi</a></li>
+              <li><a class="nav__sub-link" href="pitanje2.html"><span>02</span> Mentalitet bosanskog čovjeka</a></li>
+              <li><a class="nav__sub-link" href="pitanje3.html"><span>03</span> Toksični odnosi među ljudima</a></li>
+              <li><a class="nav__sub-link" href="pitanje4.html"><span>04</span> Portret majke</a></li>
+              <li><a class="nav__sub-link" href="pitanje5.html"><span>05</span> Majčin položaj nekad i sad</a></li>
+              <li><a class="nav__sub-link" href="pitanje6.html"><span>06</span> Položaj žene nekad i sad</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="kviz.html" aria-current="page">Kviz</a></li>
+          <li class="nav__item"><a class="nav__link" href="materijali.html">Materijali</a></li>
+        </ul>
+      </nav>
+      <button class="burger" type="button" data-burger aria-expanded="false" aria-controls="glavna-navigacija" aria-label="Otvori meni"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container container--wide page-hero__inner">
+        <nav aria-label="Putanja">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Početna</a></li>
+            <li><span aria-current="page">Kviz</span></li>
+          </ol>
+        </nav>
+        <span class="answer-kicker">Kviz · 12 pitanja</span>
+        <h1 class="page-hero__title">Provjeri znanje o djelu</h1>
+        <p class="lead page-hero__lead">Dvanaest pitanja o djelu „Prosanjane jeseni“ i o odgovorima 3. grupe. Odgovara se na jedno pitanje po jedno: tačan odgovor se oboji zeleno i tek tada možeš preći na sljedeće pitanje. Netačan odgovor se oboji crveno i prelazak ostaje blokiran dok ne odabereš tačan odgovor. Rezultat na kraju broji odgovore tačne iz prvog pokušaja. Redoslijed ponuđenih odgovora miješa se pri svakom pokretanju, pa tačan odgovor nije uvijek na istom mjestu.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="quiz" data-quiz>
+          <div class="quiz__head">
+            <span class="quiz__step" data-quiz-step>Pitanje 1 / 12</span>
+            <span class="quiz__score" data-quiz-score>Tačno iz 1. pokušaja: 0 / 12</span>
+          </div>
+          <div class="quiz__track" role="presentation"><span class="quiz__fill" data-quiz-fill></span></div>
+          <div class="quiz__stage" data-quiz-stage></div>
+          <div class="quiz__actions">
+            <button class="btn btn--primary" type="button" data-quiz-next disabled>Sljedeće pitanje</button>
+          </div>
+        </div>
+        <div class="quiz-result" data-quiz-result hidden></div>
+        <noscript><p class="quiz-note">Za rješavanje kviza potrebno je uključiti JavaScript u pregledniku.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container container--wide footer__grid">
+      <div class="footer__brand">
+        <span class="eyebrow eyebrow--bare">Školska lektira · Rad 3. grupe</span>
+        <p class="footer__title">Prosanjane jeseni</p>
+        <p class="footer__text">Autor: Zija Dizdarević. Grupna prezentacija lektire 3. grupe: šest pitanja s odgovorima, kviz za provjeru znanja i materijali za čitanje.</p>
+      </div>
+      <nav class="footer__col" aria-labelledby="footer-pitanja">
+        <p class="footer__heading" id="footer-pitanja">Pitanja</p>
+        <ul class="footer__list">
+          <li><a href="pitanje1.html">01 · Dizdarevićeva slika ljudi</a></li>
+          <li><a href="pitanje2.html">02 · Mentalitet bosanskog čovjeka</a></li>
+          <li><a href="pitanje3.html">03 · Toksični odnosi među ljudima</a></li>
+          <li><a href="pitanje4.html">04 · Portret majke</a></li>
+          <li><a href="pitanje5.html">05 · Majčin položaj nekad i sad</a></li>
+          <li><a href="pitanje6.html">06 · Položaj žene nekad i sad</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__col" aria-labelledby="footer-stranice">
+        <p class="footer__heading" id="footer-stranice">Stranice</p>
+        <ul class="footer__list">
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="kviz.html">Kviz</a></li>
+          <li><a href="materijali.html">Materijali</a></li>
+        </ul>
+      </nav>
+      <div class="footer__col">
+        <p class="footer__heading">Materijali</p>
+        <ul class="footer__list">
+          <li><a href="materijali.html#pdf">PDF verzija djela</a></li>
+          <li><a href="materijali.html#audio">Audio knjiga</a></li>
+          <li><a href="materijali.html#dodatno">Dodatni materijali</a></li>
+          <li><a href="materijali.html#izvori">Izvori i literatura</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container container--wide footer__bottom">
+      <p>© <span data-year>2026</span> <strong>Arslan Nanić</strong> · Rad 3. grupe · Školska lektira</p>
+      <p>Djelo: <strong>Prosanjane jeseni</strong> — Zija Dizdarević</p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" data-to-top aria-label="Na vrh stranice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+  <script src="js/animations.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+  <script src="js/kviz.js" defer></script>
+
+</body>
+</html>

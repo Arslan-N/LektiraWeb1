@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" preserveAspectRatio="xMidYMid slice">
+<defs>
+<filter id="soft" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="30"/></filter>
+<filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="12"/></filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+<radialGradient id="vig" cx="0.5" cy="0.5" r="0.75"><stop offset="0" stop-color="#000000" stop-opacity="0"/><stop offset="0.55" stop-color="#000000" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity="0.45"/></radialGradient>
+<linearGradient id="light" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9c2" stop-opacity="0.95"/><stop offset="1" stop-color="#e6b072" stop-opacity="0.55"/></linearGradient>
+<linearGradient id="fav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c2833a"/><stop offset="1" stop-color="#a1502c"/></linearGradient>
+</defs>
+<rect width="64" height="64" rx="14" fill="#1c1410"/>
+<path d="M32 18 C 27 14 19 13 13 14 L13 46 C 19 45 27 46 32 50 Z" fill="url(#fav)"/><path d="M32 18 C 37 14 45 13 51 14 L51 46 C 45 45 37 46 32 50 Z" fill="#d9a25a"/><path d="M32 18 L32 50" stroke="#1c1410" stroke-opacity="0.5" stroke-width="2"/>
+<rect width="64" height="64" filter="url(#grain)" opacity="0.09" style="mix-blend-mode:overlay"/>
+<rect width="64" height="64" fill="url(#vig)"/>
+</svg>

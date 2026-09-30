@@ -1,0 +1,9 @@
+# Snimke i privremeni izvještaji alata
+tools/_shots/
+tools/_todos.txt
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
